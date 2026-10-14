@@ -95,24 +95,13 @@
     }
 
     .wordmark {
-      color: var(--red);
-      font-family: var(--serif);
-      font-size: 1.8rem;
-      font-style: italic;
-      letter-spacing: -.06em;
-      line-height: .85;
+      display: block;
       text-decoration: none;
-      white-space: nowrap;
     }
 
-    .wordmark small {
-      display: block;
-      text-align: center;
-      font-family: Georgia, serif;
-      font-style: normal;
-      letter-spacing: .48em;
-      font-size: .49rem;
-      margin: 9px 0 0 .5em;
+    .wordmark img {
+      max-height: 60px;
+      width: auto;
     }
 
     .navlinks {
@@ -471,20 +460,7 @@
     }
 
     .footer-brand {
-      color: var(--red);
-      font-family: var(--serif);
-      font-size: 1.4rem;
-      font-style: italic;
-    }
-
-    .footer-brand small {
       display: block;
-      text-align: center;
-      font-family: Georgia, serif;
-      font-style: normal;
-      letter-spacing: .38em;
-      font-size: .38rem;
-      margin: 6px 0 0 .3em;
     }
 
     .footer-links {
@@ -628,8 +604,8 @@
         width: calc(100% - 28px);
       }
 
-      .wordmark {
-        font-size: 1.55rem;
+      .wordmark img {
+        max-height: 50px;
       }
 
       .hero {
@@ -734,7 +710,7 @@
   <header class="wrap">
     <nav class="nav" aria-label="Navigazione principale">
       <a class="wordmark" href="#inizio" aria-label="Effimero Project, home">
-        effimero<small>PROJECT</small>
+        <img src="assets/logo.png" alt="Effimero Project Logo">
       </a>
       <button class="menu-toggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="navlinks">
         ☰
@@ -876,7 +852,7 @@
   <footer class="wrap">
     <div class="footer-top">
       <a href="#inizio" class="footer-brand" style="text-decoration:none">
-        effimero<small>PROJECT</small>
+        <img src="assets/logo.png" alt="Effimero Project Logo" style="max-height: 40px; width: auto;">
       </a>
       <div class="footer-links">
         <a href="#storia">La storia</a>
